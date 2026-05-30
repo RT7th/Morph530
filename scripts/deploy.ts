@@ -3,7 +3,7 @@ import { network } from "hardhat";
 async function main() {  
   const { viem } = await network.connect();
   //const contract = await viem.deployContract("ISATU", [1000000n * 10n ** 18n] );
-  const contract = await viem.deployContract("Counter");
+  const contract = await viem.deployContract("MyNFT");
 
   console.log(`here's your contract address: ${contract.address}`);
 }
